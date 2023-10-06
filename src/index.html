@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module" src="./index.js" defer></script>
+    <main>
+      <div id="postList" class="postList"></div>
+      <form id="postCreate" class="form" data-openclose="close" method="POST">
+        <div class="formTitle">Create New Post</div>
+        <label for="title">Title</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Enter the text here"
+        />
+        <label for="body">Description</label>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Enter the text here"
+        ></textarea>
+        <div>
+          <button data-buttonclose>Cancel</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <form id="postUpdate" class="form" data-openclose="close" method="POST">
+        <div class="formTitle">Update Post</div>
+        <label for="title">Title</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Enter the text here"
+        />
+        <label for="body">Description</label>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Enter the text here"
+        ></textarea>
+        <div>
+          <button data-buttonclose>Cancel</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <form id="postDelete" class="form" data-openclose="close" method="POST">
+        <div class="formTitle">Delete Post</div>
+        <div class="formDescription">Are you sure you want to delete this post?</div>
+        <div>
+          <button data-buttonclose>Cancel</button>
+          <button type="submit">Yes</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
